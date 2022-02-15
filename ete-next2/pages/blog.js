@@ -12,22 +12,23 @@ export default function Blog({posts}) {
         <Search/>
         <div className='posts'>
           {posts.map((post,index) =>(
-            <Post post={post}/>
+            <Post key={index} post={post}/>
           ))}
 
           <div className="page_btn">
-              <a href="/blog">
-                <span>1</span> 
-              </a>
-              <a href="/blog2">
-                <span >2</span>  
-              </a>
-              <a href="/blog3">
-                <span>3</span>
-              </a>
-                <span>4</span>
+               <Link href="/blog">
+									<span>	1	</span>
+								</Link>
+                <Link href="/blog2">
+									<span>	2	</span>
+								</Link>
+                <Link href="/blog3">
+									<span>	3	</span>
+								</Link>
+
                 <span>&#8594;</span>
           </div> 
+
 
         </div>
 

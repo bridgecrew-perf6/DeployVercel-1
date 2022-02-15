@@ -13,22 +13,23 @@ export default function Blog2({posts2}) {
         <Search/>
         <div className='posts'>
           {posts2.map((post2,index) =>(
-            <Posts2 post={post2}/>
+            <Posts2 key={index}post={post2}/>
           ))}
 
           <div className="page_btn">
-            <a href="/blog">
-              <span>1</span> 
-            </a>
-            <a href="/blog2">
-              <span >2</span>  
-            </a>
-            <a href="/blog3">
-              <span>3</span>
-            </a>
-              <span>4</span>
-              <span>&#8594;</span>
-        </div> 
+               <Link href="/blog">
+									<span>	1	</span>
+								</Link>
+                <Link href="/blog2">
+									<span>	2	</span>
+								</Link>
+                <Link href="/blog3">
+									<span>	3	</span>
+								</Link>
+
+                <span>&#8594;</span>
+          </div> 
+
             
         </div>
         </div>
