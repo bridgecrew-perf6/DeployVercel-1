@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 import Posts2 from '../components/Posts2'
 import { sortByDate } from '../utils/sort'
 import Search from '../components/Search'
-
+import Link from 'next/link'
 
 export default function Blog2({posts2}) {
     return (
